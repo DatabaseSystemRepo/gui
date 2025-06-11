@@ -43,7 +43,7 @@ export default function VisitNotes() {
     setForm({ appointmentId: "", note: "", prescription: "" });
     fetchData();
   };
-  
+
   const handleDelete = async (id: number) => {
     if (confirm("Are you sure you want to delete this note?")) {
       await api.delete(`/visit-notes/${id}`);
@@ -81,7 +81,7 @@ export default function VisitNotes() {
               {appointments.map((a) => (
                 <option key={a.id} value={a.id}>
                   {new Date(a.date).toLocaleDateString("en-US")} {a.time} —{" "}
-                  {a.patient.name} / Dr. {a.doctor.name}
+                  {a.patient.name} / {a.doctor.name}
                 </option>
               ))}
             </select>
@@ -148,8 +148,8 @@ export default function VisitNotes() {
                     <div className="text-sm text-gray-500 mr-3">
                       {n.appointment.time}
                     </div>
-                    <button 
-                      onClick={() => handleDelete(n.id)} 
+                    <button
+                      onClick={() => handleDelete(n.id)}
                       className="text-gray-400 hover:text-red-600 p-1 rounded-full hover:bg-red-50 transition-colors"
                       title="Delete note"
                     >
