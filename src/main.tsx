@@ -5,6 +5,7 @@ import "./index.css";
 import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
 import Appointments from "./pages/Appointments";
+import VisitNotes from "./pages/VisitNotes";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/patients" element={<Patients />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/appointments" element={<Appointments />} />
+        <Route path="visit-notes" element={<VisitNotes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
