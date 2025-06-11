@@ -223,7 +223,7 @@ export default function Doctors() {
                 <div className="p-5">
                   <div className="flex items-start justify-between">
                     <h3 className="font-semibold text-lg text-gray-800">
-                      Dr. {d.name}
+                      {d.name}
                     </h3>
                     <div className="flex mt-1">
                       <button className="text-gray-400 hover:text-green-600 p-1 rounded-full hover:bg-green-50 transition-colors">
