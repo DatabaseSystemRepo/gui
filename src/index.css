@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-50 font-sans text-gray-800;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-indigo-800 mb-6;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-indigo-700 mb-4;
+  }
+
+  button {
+    @apply transition-all duration-300 shadow-md hover:shadow-lg active:shadow-sm;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200/50;
+  }
+}
+
+/* Animation for list entries */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-item {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-item:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.animate-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animate-item:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.list-item:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.list-item:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.list-item:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.list-item:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.list-item:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.list-item:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.list-item:nth-child(10) {
+  animation-delay: 0.5s;
+}

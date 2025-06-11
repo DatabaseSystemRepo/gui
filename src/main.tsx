@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar />
-      <div className="max-w-5xl mx-auto mt-6">
+      <div className="max-w-6xl mx-auto mt-8 px-6 pb-10">
         <Routes>
           <Route path="/" element={<Navigate to="/patients" />} />
           <Route path="/patients" element={<Patients />} />
