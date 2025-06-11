@@ -5,6 +5,7 @@ const links = [
   { path: "/doctors", label: "Doctors" },
   { path: "/appointments", label: "Appointments" },
   { path: "/notes", label: "Visit Notes" },
+  { path: "/stats", label: "Stats" },
 ];
 
 export default function Navbar() {

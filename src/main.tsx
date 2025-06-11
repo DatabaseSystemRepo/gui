@@ -8,6 +8,7 @@ import Doctors from "./pages/Doctors";
 import Appointments from "./pages/Appointments";
 import VisitNotes from "./pages/VisitNotes";
 import Navbar from "./components/Navbar";
+import Stats from "./pages/Stats";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/appointments" element={<Appointments />} />
           <Route path="/notes" element={<VisitNotes />} />
+          <Route path="/stats" element={<Stats />} />
         </Routes>
       </div>
     </BrowserRouter>
