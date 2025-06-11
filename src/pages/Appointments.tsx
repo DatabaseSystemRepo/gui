@@ -104,7 +104,7 @@ export default function Appointments() {
         {appointments.map((a) => (
           <li key={a.id} className="border p-2 rounded">
             <strong>
-              {a.date} {a.time}
+              {new Date(a.date).toLocaleDateString('de-DE')} {a.time}
             </strong>{" "}
             – Patient: {a.patient.name}, Doctor: {a.doctor.name}
           </li>
