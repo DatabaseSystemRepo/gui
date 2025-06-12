@@ -140,7 +140,7 @@ export default function VisitNotes() {
                       {n.appointment.patient.name}
                       <span className="mx-2 text-gray-400">with</span>
                       <span className="text-indigo-600">
-                        Dr. {n.appointment.doctor.name}
+                        {n.appointment.doctor.name}
                       </span>
                     </div>
                   </div>

@@ -150,7 +150,7 @@ export default function Appointments() {
                     </span>
                     <span className="mx-2 text-gray-400">with</span>
                     <span className="font-medium text-indigo-600">
-                      Dr. {a.doctor.name}
+                      {a.doctor.name}
                     </span>
                   </div>
                 </div>
